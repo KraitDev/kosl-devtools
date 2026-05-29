@@ -1,6 +1,6 @@
-# Contributing to the KOSL VS Code Extension
+# Contributing to the KOSL DevTools
 
-Welcome and thanks for showing interest contributing to the KOSL VS Code Extension.
+Welcome and thanks for showing interest contributing to the KOSL DevTools.
 
 This repository contains the Visual Studio Code extension for Krait Object Serialization Language (KOSL), including:
 
@@ -22,8 +22,8 @@ Requirements:
 Clone the repository:
 
 ```bash
-git clone https://github.com/KraitDev/kosl-vscode.git
-cd kosl-vscode
+git clone https://github.com/KraitDev/kosl-devtools.git
+cd kosl-devtools
 ```
 
 Install dependencies:
