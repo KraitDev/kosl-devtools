@@ -1,194 +1,92 @@
-# KOSL Support
+# KOSL VS Code Extension
 
-Syntax highlighting, formatting, validation, and tooling for Krait Object Serialization Language (KOSL).
+**The official Visual Studio Code extension for Krait Object Serialization Language (KOSL).**
 
-KOSL is a modern human-readable serialization and configuration language designed to combine:
+## Docs
 
-* `.env` simplicity
-* JSON-style structure
-* TOML-style usability
-
-while avoiding:
-
-* YAML complexity
-* indentation-based parsing
-* implicit magic behavior
+To Learn more about KOSL visit the [Wiki](https://github.com/KraitDev/kosl/wiki)
 
 ## Features
 
 * Syntax highlighting
-* Auto formatting
-* Validation diagnostics
+* Auto formatting support
+* Validation tooling
 * File icons for `.kosl`
-* `Cargo.kosl` support
+* `Cargo.kosl` recognition
 * Comment support
 * Bracket matching
 * VS Code snippets
-* TOML transpilation tooling
-* Cargo integration helpers
+* Theme-compatible scopes
+* TOML transpilation tooling integration
 
-## KOSL Example
+## File Support
 
-```kosl
-name=my_project
-version=0.1.0
-edition=2021
-
-supported=windows10,ubuntu24.04,macOS14
-
-dependencies=(
-  serde=1.0,
-  rand=0.8.5
-)
-
-features=(
-  default=[std],
-  full=[serde,tokio]
-)
-```
-
-## Arrays
-
-Implicit arrays:
-
-```kosl
-targets=linux,windows,macOS
-```
-
-Explicit arrays:
-
-```kosl
-targets=[
-  linux,
-  windows,
-  macOS
-]
-```
-
-Nested arrays:
-
-```kosl
-matrix=[
-  [1,2,3],
-  [4,5,6]
-]
-```
-
-## Objects
-
-Objects use parentheses:
-
-```kosl
-build=(
-  release=(
-    optimize=true
-  )
-)
-```
-
-Inline objects:
-
-```kosl
-dependencies=(serde=1.0,rand=0.8.5)
-```
-
-## Comments
-
-```kosl
-# This is a comment
-
-// This also works
-```
-
-## Cargo Compatibility
-
-KOSL includes optional TOML transpilation tooling for Rust projects.
-
-Example:
-
-```text
-Cargo.kosl
-   ↓
-KOSL transpiler
-   ↓
-Cargo.toml
-   ↓
-cargo build
-```
-
-Example:
-
-```kosl
-package=(
-  name=my_project,
-  version=0.1.0,
-  edition=2021
-)
-
-dependencies=(
-  serde=(
-    version=1.0,
-    features=[derive]
-  )
-)
-```
-
----
-
-## Commands
-
-### Format File
-
-```bash
-kosl format file.kosl
-```
-
-### Validate File
-
-```bash
-kosl validate file.kosl
-```
-
-### Transpile to TOML
-
-```bash
-kosl transpile Cargo.kosl
-```
-
-## File Icons
-
-KOSL files include custom file icons for:
+Supported files:
 
 * `.kosl`
 * `Cargo.kosl`
 
+The extension includes:
+
+* custom file icons
+* syntax-aware highlighting
+* formatter integration
+* language configuration support
+
 ## Installation
 
-Install from the VS Code Marketplace:
+Install from the Visual Studio Code Marketplace:
 
 1. Open Extensions
 2. Search for `KOSL Support`
 3. Install
 
-Or install manually:
+## Development
+
+Clone the repository:
 
 ```bash
-vsce package
+git clone https://github.com/KraitDev/kosl-vscode.git
+cd kosl-vscode
 ```
 
-## Extension Development
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Compile:
+
+```bash
 npm run compile
 ```
 
 Launch Extension Development Host:
 
-```bash
+```
 F5
 ```
 
+## Roadmap
+
+Planned:
+
+* semantic highlighting
+* Language Server Protocol (LSP)
+* parser diagnostics
+* formatter improvements
+* AST tooling
+* deeper TOML transpilation integration
+
+## Contributing
+
+We welcome contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for Details
+
+## Security
+
+See [SECURITY.md](SECURITY.md)
+
 ## License
 
-MIT
+This Project is managed by **KraitDev** and is licensed under the terms of the **MIT License**. See [LICENSE](LICENSE)
