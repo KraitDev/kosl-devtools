@@ -231,7 +231,7 @@
   },
 
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "",
     "lint": "eslint src",
     "format": "prettier . --write",
     "test": "node ./out/test/runTest.js",
