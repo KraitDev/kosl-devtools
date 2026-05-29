@@ -1,6 +1,6 @@
 <div align="center">
 
-<img height="120" alt="kosl vscode" src="https://github.com/user-attachments/assets/911ec745-808c-4ead-abef-b1997de3dc41" />
+<img height="120" alt="kosl vscode" src="https://github.com/user-attachments/assets/d11df6a4-d27f-4bd0-ace6-8e183eb81d5a" />
 
 [![Version](https://img.shields.io/badge/-0D1117?style=flat-square&color=0D1117)](#)
 
