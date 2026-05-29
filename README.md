@@ -35,52 +35,6 @@ The extension includes:
 * formatter integration
 * language configuration support
 
-## Installation
-
-Install from the Visual Studio Code Marketplace:
-
-1. Open Extensions
-2. Search for `KOSL Support`
-3. Install
-
-## Development
-
-Clone the repository:
-
-```bash
-git clone https://github.com/KraitDev/kosl-vscode.git
-cd kosl-vscode
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Compile:
-
-```bash
-npm run compile
-```
-
-Launch Extension Development Host:
-
-```
-F5
-```
-
-## Roadmap
-
-Planned:
-
-* semantic highlighting
-* Language Server Protocol (LSP)
-* parser diagnostics
-* formatter improvements
-* AST tooling
-* deeper TOML transpilation integration
-
 ## Docs
 
 To see the KOSL Docs, see the [Wiki](https://github.com/KraitDev/kosl/wiki)
